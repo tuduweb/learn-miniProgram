@@ -1,0 +1,51 @@
+/* pages/weather/weather.wxss */
+.today{
+  width: 90%;
+  padding: 1em;
+  background-color: #ccc;
+}
+.today>.address{
+  font-size: 0.8em;
+}
+.today text{
+  font-size: 0.8em;
+}
+#weather-more{
+  width: 95%;
+}
+.weather_item{
+  padding: 0.5em 0em 1em 0em;
+  border-bottom: 0.1em #ccc solid;
+  height: 5em;
+}
+.weather_item>.txt{
+  height: 2em;
+}
+.weather_item>.txt view{
+  float: left;
+}
+
+.weather_item>.txt view:last-child{
+  float: right;
+}
+
+.weather_item>.txt ::after{
+  overflow: auto;
+  _height: 1%;
+}
+.weather_item>.other{
+  height: 3.5em;
+}
+.weather_item>.other view[class="weathertype"]{
+  height: 3em;
+  width: 3em;
+  float: left;
+}
+
+.weather_item>.other view[class="temperature"]{
+  float: right;
+  font-size: 2em;
+}
+.temperature>small{
+  font-size: 0.5em;
+}

@@ -1,0 +1,22 @@
+<view class="container" style="padding:0">
+  <view class="today"  bindtap="binKeyFocus">
+    <text>{{local}}</text>
+    <view class="intro" >今日天气</view>
+    <view class="temperature">{{temperature}}℃</view>
+    <text>查看其它位置天气</text>
+  </view>
+  <view id="weather-more">
+    <view class="weather_item" wx:for="{{amapWeatherData}}" ><!--wx:if="{{index > 0}}"-->
+      <view class="txt">
+        <!--<view>{{index}}</view>-->
+        <view>{{item.date}}</view>
+        <view>星期{{item.week}}</view>
+      </view>
+      <view class="other">
+        <!-- <image src="{{item.dayPictureUrl}}">icon</image> -->
+        <view class="weathertype">{{item.dayweather}}</view>
+        <view class="temperature">{{item.nighttemp}}/{{item.daytemp}}<small>℃</small></view>
+      </view>
+    </view>
+  </view>
+</view>
