@@ -1,7 +1,7 @@
 <view class="container" style="padding:0">
   <view class="today"  bindtap="binKeyFocus">
     <text>{{local}}</text>
-    <view class="intro" >今日天气</view>
+    <view class="intro" >现在即可的天气</view>
     <view class="temperature">{{temperature}}℃</view>
     <text>查看其它位置天气</text>
   </view>

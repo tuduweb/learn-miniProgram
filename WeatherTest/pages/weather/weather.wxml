@@ -1,0 +1,18 @@
+<!--pages/weather/weather.wxml-->
+<text>纬度： {{ latitude }}</text>
+<text>经度： {{ longitude }}</text>
+<text></text>
+<text>当前温度： {{ temperature }}</text>
+<text>当前湿度： {{ humidity }}</text>
+<text>当前天气： {{ weather }}</text>
+<view class="today"  bindtap="binKeyFocus">
+    <text>{{address}}</text>
+    <view class="intro" >今日天气</view>
+    <view class="temperature">{{temperature}}℃</view>
+    <text>查看其它位置天气</text>
+  </view>
+
+<view class="weather_item" wx:for="{{ forecasts }}">
+  <view class="txt">{{index}}</view>
+  <view class="other">{{item.daytemp}} / {{item.nighttemp}}</view>
+</view>
